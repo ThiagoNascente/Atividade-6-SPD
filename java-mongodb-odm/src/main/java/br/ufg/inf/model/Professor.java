@@ -19,6 +19,7 @@ public class Professor {
         this.nomeCompleto = nomeCompleto;
         this.dataDeNascimento = dataDeNascimento;
         this.nivelPos = nivelPos;
+        this.salario = salario;
     }
 
     public String getId() {

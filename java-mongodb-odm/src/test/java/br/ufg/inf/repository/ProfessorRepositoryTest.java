@@ -48,13 +48,13 @@ public class ProfessorRepositoryTest {
     @Test
     @DisplayName("GET / Buscar por ID: Encontrar professor existente")
     void testBuscarPorId() {
-        Professor salvo = repo.save(new Professor("Maria Teste", "1990-01-01", "Mestre", 10354.79));
+        Professor salvo = repo.save(new Professor("Vinicius Teste", "2004-05-24", "Doutor", 10354.79));
 
         Optional<Professor> resultado = repo.findById(salvo.getId());
 
         assertTrue(resultado.isPresent());
         assertEquals(salvo.getId(), resultado.get().getId());
-        assertEquals("Maria Teste", resultado.get().getNomeCompleto());
+        assertEquals("Vinicius Teste", resultado.get().getNomeCompleto());
     }
 
     @Test
